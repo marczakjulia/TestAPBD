@@ -1,6 +1,10 @@
-namespace Test;
+using Test2.DTOs;
+using Test2.Models;
 
-public class IApplicationService
+namespace Test2.Service;
+
+public interface IApplicationService
 {
-    
+    Task<IEnumerable<RecordDTO>> GetRecordsAsync(RecordFilterDTO filter);
+    Task<RecordDTO> CreateRecordAsync(CreateRecordDTO record);
 }

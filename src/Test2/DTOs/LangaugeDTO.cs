@@ -1,6 +1,7 @@
 namespace Test2.DTOs;
 
-public class LangaugeDTO
+public class LanguageDTO
 {
-    
+    public int Id { get; set; }
+    public string Name { get; set; }
 }
